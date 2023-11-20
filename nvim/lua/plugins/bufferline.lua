@@ -9,7 +9,6 @@ return
         },
         opts = {
             options = {
-                close_command = "Bdelete! %d",
                 always_show_bufferline = true,
                 offsets = { { filetype = "NvimTree", text = "", padding = 1 } }
             }
