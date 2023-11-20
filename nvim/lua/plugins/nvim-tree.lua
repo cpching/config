@@ -7,6 +7,18 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end
 })
 
+vim.g.nvim_tree_icons = {
+    git = {
+        unstaged = "",
+        staged = "S",
+        unmerged = "",
+        renamed = "➜",
+        deleted = "",
+        ignored = "◌"
+    }
+}
+
+
 return {
     {
         "nvim-tree/nvim-tree.lua",

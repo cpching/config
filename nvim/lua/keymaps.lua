@@ -1,4 +1,5 @@
 local opts = { noremap = true, silent = true }
+
 local keymap = vim.api.nvim_set_keymap
 
 ---- Normal ----
@@ -9,8 +10,7 @@ keymap("n", "<Up>", "gk", opts)
 keymap("n", "<Down>", "gj", opts)
 keymap("n", "<C-P>", "<CMD>bp!<CR>", opts)
 keymap("n", "<C-N>", "<CMD>bn!<CR>", opts)
-keymap("n", "<C-\\>", "<CMD>bd!<CR>", opts)
-
+-- keymap("n", "<C-\\>", "<CMD>bnbR>", opts)
 ---- Normal ----
 
 
