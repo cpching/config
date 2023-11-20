@@ -1,0 +1,15 @@
+binwalk/
+coc/
+configstore/
+filezilla/
+gcloud/
+github-copilot/
+htop/
+iterm2/
+ranger/
+wireshark/
+
+nvim.zip
+.DS_Store
+
+tmux/plugins/
