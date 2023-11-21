@@ -17,6 +17,7 @@ keymap("n", "<C-N>", "<CMD>bn!<CR>", opts)
 ---- Insert ----
 keymap("i", "jj", "<ESC>", opts)
 keymap("i", "<C-L>", "<C-O>:update<CR>", opts)
+keymap("i", "<C-_>", "<C-O><C-_>", {noremap = false})
 ---- Insert ----
 
 ---- Visual ----
