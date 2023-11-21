@@ -4,5 +4,5 @@ require("options")
 require("keymaps")
 require("plugin-manager")
 
-vim.cmd.colorscheme "nord"
+vim.cmd[[colorscheme nord]]
 
