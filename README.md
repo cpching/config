@@ -8,9 +8,6 @@ Configuration files of neovim and tmux
         - close the window when the last buffer has been closed
     - lualine
         - no focus on nvim-tree
-    - quick comment
-    - restore last cursor position on file reopen
-    - bracket matching
     - trace code
         - ctags
         - cscope
