@@ -3,9 +3,14 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     event = "VeryLazy",
     opts = {
-        theme = 'nord' 
+        theme = 'nord',
+        ignore_focus = {
+             "NvimTree"
+        },
+        globalstatus = true
     },
     config = function(_, opts)
-        require("bufferline").setup{options = { theme  = 'nord'}}
+        require("lualine").setup(opts)
     end
 }
+
