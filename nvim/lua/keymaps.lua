@@ -10,8 +10,9 @@ keymap("n", "<Up>", "gk", opts)
 keymap("n", "<Down>", "gj", opts)
 keymap("n", "<C-P>", "<CMD>bp!<CR>", opts)
 keymap("n", "<C-N>", "<CMD>bn!<CR>", opts)
--- keymap("n", "<C-\\>", "<CMD>bn!<CR><CMD>bd #<CR>", opts)
-keymap("n", "<C-\\>", "<CMD>bd<CR>", opts)
+-- keymap("n", "<C-\\>", "<CMD>bn!<CR><CMD>bd#<CR><CR><bar><CMD>bd#<CR><CR>", opts)
+keymap("n", "<C-\\>", "<CMD>bp!<CR><CMD>bd#<CR>:<CR>", opts)
+-- keymap("n", "<C-\\>", "<CMD>bd<CR>", opts)
 ---- Normal ----
 
 

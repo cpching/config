@@ -1,3 +1,3 @@
 return {
-    { "shaunsingh/nord.nvim" }
+   { "shaunsingh/nord.nvim" }
 }
