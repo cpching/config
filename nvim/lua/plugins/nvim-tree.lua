@@ -45,13 +45,12 @@ return {
         event = "VeryLazy",
         keys = {
             {"<leader>n", "<CMD>NvimTreeToggle<CR>" },
-            {"u", "-"}
         },
         opts = 
         {
             on_attach = my_on_attach,
             view = {
-                width = 25
+                width = 30
             },
             actions = {
                 open_file = {
