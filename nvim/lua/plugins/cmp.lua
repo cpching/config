@@ -18,10 +18,10 @@ local kind_icons = {
     Value = "",
     Enum = "",
     Keyword = "󰌆",
-    Snippet = "",
+    -- Snippet = "",
+    Snippet = "󰻋",
     Color = "",
-    File = "",
-    Reference = "",
+    File = "",
     Folder = "",
     EnumMember = "",
     Constant = "",
@@ -30,6 +30,7 @@ local kind_icons = {
     Operator = "",
     TypeParameter = "󰉺",
 }
+-- find more here: https://www.nerdfonts.com/cheat-sheet
 return 
 {
     {
@@ -51,7 +52,6 @@ return
                     completeopt = "menu,menuone,noinsert",
                 },
                 snippet = {
-
                     expand = function(args)
                         require("luasnip").lsp_expand(args.body)
                     end,
@@ -121,7 +121,7 @@ return
                 windows = {
                     documentation = cmp.config.window.bordered(),
                 },
-                sorting = defaults.sorting,
+                -- sorting = defaults.sorting,
             }
         end,
         ---@param opts cmp.ConfigSchema
