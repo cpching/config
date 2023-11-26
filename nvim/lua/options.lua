@@ -13,8 +13,8 @@ local options =
     expandtab = true,
     shiftwidth = 4,
     tabstop = 4,
-    pastetoggle = "<M-P>",
     hidden = false,
+    mouse="i",
 }
 
 for key, value in pairs(options) do
