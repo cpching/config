@@ -13,8 +13,8 @@ return
                 offsets = { { filetype = "NvimTree", text = "", padding = 1 } }
             }
         },
-        config = function(_, opts)
-            require("bufferline").setup(opts)
-        end
+        -- config = function(_, opts)
+        --     require("bufferline").setup(opts)
+        -- end
     }
 }

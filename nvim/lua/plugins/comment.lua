@@ -8,12 +8,6 @@ return
                 line = '<C-_>'
             },
         },
-
-
-        keys = {
-        },
-        config = function(_, opts)
-            require('Comment').setup(opts)
-        end
+        keys = { },
     }
 }

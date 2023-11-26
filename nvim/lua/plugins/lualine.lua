@@ -6,12 +6,9 @@ return
         event = "VeryLazy",
         opts = {
             theme = 'nord',
-        globalstatus = true,
-        extensions = {'nvim-tree'}
-    },
-    config = function(_, opts)
-        require("lualine").setup(opts)
-    end
-}
+            globalstatus = true,
+            extensions = {'nvim-tree'}
+        },
+    }
 }
 

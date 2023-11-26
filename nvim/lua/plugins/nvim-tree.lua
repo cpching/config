@@ -37,7 +37,8 @@ local function my_on_attach(bufnr)
 end
 -- my on_attach
 
-return {
+return
+{
     {
         "nvim-tree/nvim-tree.lua",
         version = "*",
@@ -58,9 +59,5 @@ return {
                 },
             },
         },
-        config = function(_, opts)
-            require("nvim-tree").setup(opts)
-
-        end
     }
 }

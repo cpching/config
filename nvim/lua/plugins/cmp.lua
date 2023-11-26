@@ -35,6 +35,7 @@ return
 {
     {
         "hrsh7th/nvim-cmp",
+        enabled = true,
         event = "InsertEnter",
         dependencies = {
             "hrsh7th/cmp-nvim-lsp",
@@ -129,7 +130,7 @@ return
             for _, source in ipairs(opts.sources) do
                 source.group_index = source.group_index or 1
             end
-            require("cmp").setup(opts)
+            -- require("cmp").setup(opts)
         end,
     }
 }
