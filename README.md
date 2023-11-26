@@ -6,6 +6,7 @@ Configuration files of neovim and tmux
     - bufferline
         - close the window when the last buffer has been closed
     - trace code
-        - ctags
         - cscope
     - lsp
+        - cmp
+    - multiple cursor
