@@ -9,6 +9,8 @@ keymap("n", "<Down>", "gj", opts)
 keymap("n", "<C-P>", "<CMD>bp!<CR>", opts)
 keymap("n", "<C-N>", "<CMD>bn!<CR>", opts)
 keymap("n", "<C-\\>", "<CMD>bn!<CR><CMD>bd#<CR>:<CR>", opts)
+keymap("n", "<Space>", "\"=nr2char(getchar())<cr>p", opts)
+keymap("n", "<M-Space>", "\"=nr2char(getchar())<cr>P", opts)
 
 ---- bug ---- 
 -- can't replace the '_' character successfully (with cmp plugin) 
@@ -22,9 +24,9 @@ keymap("n", "<C-\\>", "<CMD>bn!<CR><CMD>bd#<CR>:<CR>", opts)
 keymap("i", "jj", "<ESC>", opts)
 keymap("i", "<C-L>", "<C-O>:update<CR>", opts)
 keymap("i", "<C-_>", "<C-O><C-_>", {noremap = false})
+keymap("i", "<C-V>", "<C-O><CMD>set paste<CR><C-R>+<C-O><CMD>set paste!<CR>", opts)
 -- keymap("i", "<ScrollWheelUp>", "<C-O>k", opts)
 -- keymap("i", "<ScrollWheelDown>", "<C-O>j", opts)
-keymap("i", "<C-V>", "<C-O><CMD>set paste<CR><C-R>+<C-O><CMD>set paste!<CR>", opts)
 ---- Insert ----
 
 
