@@ -11,12 +11,8 @@ keymap("n", "<C-N>", "<CMD>bn!<CR>", opts)
 keymap("n", "<C-\\>", "<CMD>bn!<CR><CMD>bd#<CR>:<CR>", opts)
 keymap("n", "<Space>", "\"=nr2char(getchar())<cr>p", opts)
 keymap("n", "<M-Space>", "\"=nr2char(getchar())<cr>P", opts)
-
----- bug ---- 
--- can't replace the '_' character successfully (with cmp plugin) 
--- keymap("n", "<Space>", "a_<ESC>r", opts)
--- keymap("n", "<M-Space>", "i_<ESC>r", opts)
----- bug ---- 
+keymap("n", "<leader>o", "o<Esc>0\"_D", opts)
+keymap("n", "<leader>O", "O<Esc>0\"_D", opts)
 ---- Normal ----
 
 
@@ -33,9 +29,13 @@ keymap("i", "<C-V>", "<C-O><CMD>set paste<CR><C-R>+<C-O><CMD>set paste!<CR>", op
 ---- Visual ----
 keymap("v", "aa", "<ESC>", opts)
 keymap("v", "<C-L>", "<C-C>:update<CR>", opts)
+
 -- Move text up and down
 keymap("v", "<M-j>", ":m .+1<CR>==", opts)
 keymap("v", "<M-k>", ":m .-2<CR>==", opts)
+-- Move text up and down
+
+keymap("v", "p", '"_dP', opts)
 ---- Visual ----
 
 -- Visual Block --

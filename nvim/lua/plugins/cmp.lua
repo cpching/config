@@ -2,7 +2,7 @@ local check_backspace = function()
     local col = vim.fn.col "." - 1
     return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
---   פּ ﯟ   some other good icons
+--   פּ ﯟ    some other good icons
 local kind_icons = {
     Text = "󰊄",
     Method = "m",
@@ -18,15 +18,14 @@ local kind_icons = {
     Value = "",
     Enum = "",
     Keyword = "󰌆",
-    -- Snippet = "",
     Snippet = "󰻋",
     Color = "",
     File = "",
-    Folder = "",
+    Folder = "",
     EnumMember = "",
     Constant = "",
     Struct = "",
-    Event = "",
+    Event = "",
     Operator = "",
     TypeParameter = "󰉺",
 }
@@ -48,7 +47,7 @@ return
         opts = function()
             local cmp = require("cmp")
             local luasnip = require("luasnip")
-            local defaults = require("cmp.config.default")()
+            -- local defaults = require("cmp.config.default")()
             return {
                 completion = {
                     completeopt = "menu,menuone,noinsert",
@@ -128,7 +127,7 @@ return
                 -- sorting = defaults.sorting,
             }
         end,
-        ---@param opts cmp.ConfigSchema
+        -- @param opts cmp.ConfigSchema
         config = function(_, opts)
             for _, source in ipairs(opts.sources) do
                 source.group_index = source.group_index or 1
