@@ -1,6 +1,13 @@
 local language_servers = {
-    'lua_ls',
-    'pyright'
+    'lua_ls',                   -- Lua 
+    'pyright',                  -- Python
+    'clangd',                   -- C
+    'html',                     -- HTML
+    'cssls',                    -- CSS
+    'tsserver',                 -- JavaScript
+    'golangci_lint_ls',         -- Go
+    'bashls',                   -- Bash 
+    -- 'asm_lsp'                   -- Assembly 
 }
 
 local function lsp_highlight_document(client)

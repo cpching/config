@@ -31,18 +31,19 @@ local kind_icons = {
     TypeParameter = "󰉺",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
-return 
+return
 {
     {
         "hrsh7th/nvim-cmp",
         enabled = true,
+        -- enabled = false,
         event = "InsertEnter",
         dependencies = {
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
             "saadparwaiz1/cmp_luasnip",
-            "L3MON4D3/LuaSnip" 
+            "L3MON4D3/LuaSnip"
         },
         opts = function()
             local cmp = require("cmp")
@@ -97,6 +98,7 @@ return
                     }),
                 }),
                 sources = cmp.config.sources({
+                    { name = "nvim_lsp"},
                     { name = "luasnip" },
                     { name = "buffer" },
                     { name = "path" },
@@ -108,6 +110,7 @@ return
                         vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
                         -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
                         vim_item.menu = ({
+                            nvim_lsp = "[LSP]",
                             luasnip = "[Snippet]",
                             buffer = "[Buffer]",
                             path = "[Path]",
