@@ -32,7 +32,7 @@ local function my_on_attach(bufnr)
 
     -- custom mappings
     vim.keymap.set('n', 'u', api.tree.change_root_to_parent,        opts('Up'))
-    vim.keymap.set('n', '<C-t>', api.fs.rename_full,        opts('Rename: Full Path'))
+    vim.keymap.set('n', '<C-a>', api.fs.rename_full,        opts('Rename: Full Path'))
     vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
 end
 -- my on_attach
